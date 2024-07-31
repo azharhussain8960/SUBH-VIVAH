@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100wh;
+    height: 100vh;
+    background-image: url(https://img2.sangam.com/assets/home/HomePage_Default_Final.webp);
+    background-position:center;
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+}
+.navbar{
+    width: 100wh;
+    height: 20vh;
+    background-color: rgba(235, 218, 183, 0.187);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.right ul{
+    display: flex;
+    
+}
+.right ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 70px;
+}
+.right ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+
