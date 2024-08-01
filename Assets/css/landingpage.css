@@ -33,4 +33,9 @@ nav{
     color:black;
 }
 
-
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content:last baseline;
+    align-items: center;
+}
