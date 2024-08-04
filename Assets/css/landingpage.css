@@ -1,12 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav{
     width: 100wh;
     height: 100vh;
-    background-image: url(https://img2.sangam.com/assets/home/HomePage_Default_Final.webp);
+    background-image: url(https://img2.shaadi.com/assests/2023/images/seo-landing-pages/bengali-matrimony-desktop-v3.jpg);
     background-position:center;
     background-size:cover;
     /* background-repeat: no-repeat; */
@@ -30,12 +31,69 @@ nav{
 }
 .right ul li a{
     text-decoration: none;
-    color:black;
+    color:white;
+    font-size: larger;
+    font-weight: bold;
+}
+#theme{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    text-align: center;
 }
 
 .slogan{
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content:last baseline;
+    justify-content:center;
     align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
+#lang li{
+    display: none;
+}
+#lang{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#choose_lang:hover #lang li{
+    display: block;
+    margin-bottom:  5px ;
+    padding: 10px 0;
+    background-color:rgba(235, 218, 183, 0.187) ;
+    width: 160px;
+    text-align: center;
+   
+}
+#choose_lang:hover #lang {
+    position: absolute; 
+}
+#lang li:hover {
+    transition: .2s;
+    transform:scale(1.1);
+    box-shadow: 0 0 5px black;
+
+}
+
+
+/* // Input container */
+
+.input_container{
+    width: 80vw;
+    height: 100px;
+    background-color:rgba(235, 218, 183, 0.187) ;
+    margin-bottom: -140px;
+    margin-top: 30px;
+    display: flex;
+}
+.childs{
+    display: flex;
+
+}
+
