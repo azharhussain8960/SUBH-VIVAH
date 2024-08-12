@@ -3,14 +3,17 @@
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body{
+    background-color: #f1f1f2;
+
+}
 
 nav{
-    width: 100wh;
+    width: 100%;
     height: 100vh;
     background-image: url(https://img2.shaadi.com/assests/2023/images/seo-landing-pages/bengali-matrimony-desktop-v3.jpg);
     background-position:center;
     background-size:cover;
-    /* background-repeat: no-repeat; */
 }
 .navbar{
     width: 100wh;
@@ -38,7 +41,6 @@ nav{
 #theme{
     width: 30px;
     height: 30px;
-    /* border: 1px solid black; */
     border-radius: 50%;
     text-align: center;
 }
@@ -71,6 +73,17 @@ nav{
     text-align: center;
    
 }
+#choose_lang:hover .theemes li{
+    display: block;
+    margin-bottom:  5px ;
+    padding: 10px 0;
+    background-color:rgba(235, 218, 183, 0.187) ;
+    width: 160px;
+    text-align: center;
+    position: relative;
+    left: -50px;
+   
+}
 #choose_lang:hover #lang {
     position: absolute; 
 }
@@ -82,18 +95,243 @@ nav{
 }
 
 
-/* // Input container */
+/* // Input container Starts */
+.search-container {
+    background-color: rgba(235, 218, 183, 0.187); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: -130px;
+}
 
-.input_container{
-    width: 80vw;
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form label {
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-form select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #00a9db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background-color: #008bb0;
+}
+
+/* Input Containet Ends */
+
+
+/* Find Your Special Match Starts */
+#find_mtch{
+    text-align: center;
+    margin:60px 0px;
+    color: red;
+    font-size:35px;
+
+}
+.login{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+.one{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.login_txt{
+    margin-top: 50px;
+
+}
+.login_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #008bb0;
+
+}
+.myclass{
+    font-size: 60px;
+     text-align: center;
+     line-height: 150px;
+     color: white;
+     font-weight: bolder;
+}
+
+.singup_btn{
+    color:#008bb0;
+    font-size: 24px;
+    font-weight: 400px;
+    text-decoration: none;
+}
+.singup_btn:hover {
+    text-decoration: underline;
+}
+/* Find Your Special Match Ends */
+
+/* Why Choose Starts */
+
+.why_choose{
+    text-align: center;
+    padding: 60px 0 10px 0;
+    font-weight: bolder;
+    color: red;
+}
+h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.why_choose_cont{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: white;
+}
+.why_choose_img{
+    width: 50%;
+    height: 400px;
+    cursor: pointer;
+}
+.chooseimg{
+    width: 100%;
+    height: 500px;
+}
+.why_choose_txt{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.h3tag{
+    padding: 20px;
+    margin: 30px;
+}
+p{
+    color: #72727d;
+    padding: 10px;
+    text-transform: capitalize;
+    line-height: 29px;
+    text-align: justify;
+    text-indent: 50px;
+}
+/* Why Choose Ends */
+
+/* Your Story Is Waiting Starts */
+.Million{
+    text-align: center;
+    padding: 60px;
+    color: red;
+    font-weight: bolder;
+}
+.slide_cont {
+    width: 80%;
+    height: 500px; /* Adjust height as per your design */
+    margin: 0 10% ;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll; /* Horizontal scroll for slides */
+  }
+  
+  .slide_one {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 26%;
+    margin-right: 20px; /* Space between slides */
+    margin-left:  50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+    /* transition:  .5s cubic-bezier(.25,.8,.25,1); */
+
+  }
+  .slide_one:hover {
+    box-shadow:0 0 5px black;
+    /* transition: all .5s cubic-bezier(.25,.8,.25,1); */
+    transition: .3s;
+    transform: scale(1.01);
+  }
+  
+  .slide_img {
+    height: 60%; /* Adjust image height */
+  }
+  
+  .slideimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .slide_txt {
+    height: 40%; /* Adjust text container height */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in height calculation */
+  }
+  
+  .applicants_names {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+
+  .your_story{
+    width: 100%;
     height: 100px;
-    background-color:rgba(235, 218, 183, 0.187) ;
-    margin-bottom: -140px;
-    margin-top: 30px;
+    background-color: red;
     display: flex;
-}
-.childs{
+    justify-content: center;
+    align-items: center;
+  }
+  .your_storytext{
+    font-size: 25px;
+    color: white;
+  }
+  .getstarted{
+    width: 14%;
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: red;
+  }
+  .getstarted:hover{
+    background-color:white;
+    color: #00a9db;
+    transition: .5s;
+  }
+
+/* Your Story Is Waiting Ends */
+
+/* Second Logo Starts Here */
+
+
+.seond_logo{
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
-
+.logo_sec{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Second Logo Ends Here */
